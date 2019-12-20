@@ -1,0 +1,75 @@
+/*posts*/
+
+#box1
+{
+    border:2px dashed #999999;
+    grid-area: ct1;
+    text-align: center;
+    padding-top: 50px;
+}
+
+h3
+{
+    color: #a6e22e;
+}
+
+.date
+{
+    color: #ff17b4;
+}
+
+.url-link
+{
+    color: #31beef;
+}
+
+#box2
+{
+    border:2px dashed #999999;
+    grid-area: ct2;
+    text-align: center;
+    padding-top: 50px;
+}
+
+#box3
+{
+    border:2px dashed #999999;
+    grid-area: ct3;
+    text-align: center;
+    padding-top: 50px;
+}
+
+#box4
+{
+    border:2px dashed #999999;
+    grid-area: ct4;
+    text-align: center;
+    padding-top: 50px;
+}
+
+#box5
+{
+    border:2px dashed #999999;
+    grid-area: ct5;
+    text-align: center;
+    padding-top: 50px;
+}
+
+/*unique box6*/
+
+#box6
+{
+    border:2px dashed #999999;
+    grid-area: ct6;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#headstone
+{
+    padding-left:0;
+    padding-top:30px;
+}

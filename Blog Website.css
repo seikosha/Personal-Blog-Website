@@ -1,0 +1,104 @@
+@import 'CSS files/blog-website-header.css';
+@import 'CSS files/blog-website-posts.css';
+@import 'CSS files/blog-website-self.css';
+@import 'CSS files/blog-website-footer.css';
+
+/*Body*/
+
+body
+{
+    background-color: black;
+    font-family: 'conso', courier New, monospace;
+    color: #f8f8f2;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px 300px 300px;
+    grid-template-areas:
+    "hd hd hd"
+    "ct1 ct2 ot"
+    "ct3 ct4 ot"
+    "ct5 ct6 ft";
+}
+
+@media (min-width:600px) and (max-width:900px)
+{
+    body
+    {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(6, 300px);
+        grid-template-areas:
+        "hd hd"
+        "ot ot"
+        "ct1 ct2"
+        "ct3 ct4"
+        "ct5 ct6"
+        "ft ft";
+    }
+
+    #self
+    {
+        grid-area:ot;
+        margin-top: -220px;
+    }
+
+    img
+    {
+        width:160px;
+        height:160px;
+        margin-left:72px;
+    }
+
+    #avatar-caption
+    {
+        margin-top: 0;
+        margin-left: 72px;
+        padding-left: 215px;
+        color: #a6e22e;
+        font-weight: bold;
+        font-size: larger;
+        margin-bottom: 0;
+    }
+
+    #avatar-caption2
+    {
+        margin-bottom: 0;
+    }
+
+    #self-links
+    {
+        display: flex;
+        flex-direction: row;
+        color: #19efe9;
+        padding-bottom: 30px;
+    }
+
+}
+
+@media (max-width:600px)
+{
+    body
+    {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(5, 300px);
+        grid-template-areas:
+        "hd hd"
+        "ct1 ct2"
+        "ct3 ct4"
+        "ct5 ct6"
+        "ft ft";
+    }
+
+    #self
+    {
+        display: none;
+        grid-area:ot;
+        margin-top: -220px;
+    }
+
+    .boxes
+    {
+        justify-content: stretch;
+    }
+}
+
+

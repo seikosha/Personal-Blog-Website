@@ -1,0 +1,24 @@
+/*author introduction*/
+.author
+{
+    grid-area: at;
+    text-align: center;
+    padding-left: 20px;
+    padding-top: 100px;
+}
+
+.name
+{
+    font-size: xx-large;
+}
+
+.occupations
+{
+    color: #a6e22e;
+}
+
+.employment
+{
+    color: #66d9ef;
+    font-size: larger;
+}

@@ -1,0 +1,84 @@
+@import 'CSS files/blog-header.css';
+@import 'CSS files/blog-blogs.css';
+@import 'CSS files/blog-author.css';
+/*body*/
+body
+{
+    background-color: black;
+    color: #f8f8f2;
+    font-family: 'conso', courier new, monospace;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(8,200px);
+    grid-template-areas:
+    "hd hd"
+    "bx1 at"
+    "bx2 at"
+    "bx3 ar"
+    "bx4 ar"
+    "bx5 sm"
+    "bx6 sm"
+    "xx ft";
+}
+
+/*media queries*/
+@media (min-width:601px) and (max-width:900px)
+{
+    .boxes
+    {
+        padding-right: 40px;
+    }
+}
+
+@media (max-width:600px)
+{
+    body
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    header
+    {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+
+.archives
+{
+    grid-area: ar;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 20px;
+}
+
+.ar_names
+{
+    text-align: center;
+    font-size: x-large;
+    color: #a6e22e;
+}
+
+.links
+{
+    color: #19efe9;
+    grid-area: sm;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 20px;
+}
+
+footer
+{
+    grid-area: ft;
+    text-align: center;
+    padding-top: 50px;
+}

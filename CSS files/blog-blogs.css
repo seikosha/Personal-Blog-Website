@@ -1,0 +1,57 @@
+/*blog*/
+.contents
+{
+    text-align: center;
+}
+
+.titles
+{
+    text-align: center;
+    color: #a6e22e;
+    font-size: xx-large;
+}
+
+.dates
+{
+    padding-top: 10px;
+    padding-bottom: 20px;
+    color: #ff17b4;
+}
+
+.boxes
+{
+    padding-left: 50px;
+    padding-bottom: 50px;
+    padding-top: 30px;
+    border: dashed 2px #999999;
+}
+
+.box1
+{
+    grid-area: bx1;
+}
+
+.box2
+{
+    grid-area: bx2;
+}
+
+.box3
+{
+    grid-area: bx3;
+}
+
+.box4
+{
+    grid-area: bx4;
+}
+
+.box5
+{
+    grid-area: bx5;
+}
+
+.box6
+{
+    grid-area: bx6;
+}

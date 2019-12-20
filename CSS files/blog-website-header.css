@@ -1,0 +1,29 @@
+/*Header*/
+header
+{
+    text-align: center;
+    padding-top: 4em;
+    grid-area:hd;
+}
+
+#italic-h2
+{
+    font-style:italic;
+    color: #66d9ef;
+}
+
+h2
+{
+    color: #a6e22e;
+}
+
+#brackets
+{
+    color: #f8f8f2;
+}
+
+#inside
+{
+    font-style:italic;
+    color: #fd971f;
+}
